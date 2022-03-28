@@ -1,5 +1,4 @@
-import React from "react";
-import { isPropertyAccessChain } from "typescript";
+
 
 type StatusProps = {
     status: "loading" | "success" | "error";  //this is called string literal union operator....to specify specific data expected.

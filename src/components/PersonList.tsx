@@ -8,11 +8,11 @@ import { Name } from "./Person.types"
 //     names: {
 //         first: string, 
 //         last: string, 
-//     }[]
+//     }[]  //this is how we specify array ...
 // }
 
 type PersonListProps = {
-    names: Name[]
+    names: Name[] 
 }
 export const PersonList = (props: PersonListProps) => {
     return (
