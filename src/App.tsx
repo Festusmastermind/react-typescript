@@ -10,6 +10,11 @@ import { Container } from "./components/Container"
 import { User } from "./state/User"
 import { UserAssertion } from "./state/UserAssertion"
 import "./App.css";
+import { MutableRef } from "./ref/MutableRef"
+import { Private } from "./auth/Private"
+import { Profile } from "./auth/Profile"
+import { GenericList } from "./generics/GenericList"
+import { CustomButton } from "./html/Button"
 
 function App() {
     const personName = {
@@ -46,8 +51,28 @@ function App() {
             {/* <Button handleClick={(event, id)=>{console.log('Button clicked', event, id)}} /> */}
             {/* <Input value="" handleChange={(event) => console.log(event)} /> */}
             {/* <Container styles={{border: '1px solid black', padding: '1rem'}} /> */}
-            <User />
-            <UserAssertion />
+            {/* <User />*/}
+            {/* <UserAssertion />  */}
+            {/* {<MutableRef />} */}
+            {/* <Private isLoggedIn={true} component={Profile}/> */}
+            {/* <List items={['Batman', 'Superman', 'Wonderwoma']} onClick={(item)=>console.log(item)}/> */}
+            {/* <GenericList 
+            items={[
+                {
+                    id: 1, 
+                    first: 'Bruce',
+                    last: 'Wayne',
+                },
+                {
+                    id: 1, 
+                    first: 'Clark',
+                    last: 'kent',
+                },
+                
+        ]} onClick = {(item)=> console.log(item)} /> */}
+        <CustomButton variant="primary" onClick={()=>console.log('clicked')} >
+            Primary Button
+        </CustomButton>
         </div>
     );
 }
